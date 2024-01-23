@@ -329,30 +329,38 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .filter{
+  nav li {
+    padding: 10px 53px;
+    margin: 0 0 0 0;
+    border-top: none;
+    border-bottom: 2px solid white;
+  }
+  .filter {
     flex-direction: column;
     align-items: baseline;
   }
   .accommodations {
     width: 100%;
+    padding-left: 20px;
   }
-  .filterbottom ul{
+  .filterbottom ul {
     gap: 10px;
     width: auto;
     font-size: 14px;
     padding-left: 0;
     flex-wrap: wrap;
   }
-  .filter ul li{
+  .filter ul li {
     height: 50px;
     width: 29%;
   }
-  .card{
+  .card {
     padding: 0;
   }
   .popular__cards {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .popular__cards .card image {
     width: 90px;
@@ -375,7 +383,7 @@ footer {
     width: 75px;
   }
   .popular_logo i {
-    margin: 33px 0 0 38%;
+    margin: 33px 0 0 35%;
   }
   .activity_ville img {
     height: 50%;
@@ -383,12 +391,30 @@ footer {
   .activity_cards {
     max-height: 300px;
     min-height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
   }
   .activity_ville img {
     height: 75%;
   }
-  .accommodations h2{
+  .activity h2 {
+    font-size: 22px;
+  }
+  .card {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  .card__header img {
+    height: 105px;
+  }
+  .accommodations h2 {
     margin-top: 0;
+    font-size: 22px;
+  }
+  .activity_ville {
+    margin-bottom: 15%;
   }
   .footer_align {
     padding-top: 0;
@@ -401,16 +427,16 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .formulary{
+  .formulary {
     margin: 30px 0;
   }
   .formulary button {
     border-radius: 15px;
   }
-  header{
+  header {
     flex-direction: column;
   }
-  .card__header{
+  .card__header {
     flex-direction: column;
   }
   .logo {
@@ -419,115 +445,110 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  .logo img{
+  .logo img {
     width: 61px;
   }
-  .directionRow{
+  .directionRow {
     padding: 0;
   }
-  nav li{
-    padding: 0 60px 10px 0;
-    border-top: none;
-    border-bottom: 2px solid white;
-  }
-  .filter {
-    flex-direction: column;
-    align-items: baseline;
-    margin-left: 20px;
-  }
-  .filter h3{
-    margin-block: 0;
-    margin-bottom: 20px;
-  }
-  .formulary__title{
-    margin: 0 21px;
-  } 
-  .formulary button i {
-    display: none
-  }
-  .formulary__title h1{
-    font-size: 22px;
-  }
-  .filterbottom ul{
-    gap: 10px;
-    width: auto;
-    font-size: 14px;
-    padding-left: 0;
-    flex-wrap: wrap;
-  }
-  .filter ul li{
-    height: 51px;
-    width: 130px;
-    margin-right: 0;
-  }
-  .info_i {
-    font-size: small;
-  }
-  .row{
-    flex-direction: column-reverse;
-  }
-  .card__body__popular h4 {
-    max-width: none;
-  }
-  .popular__cards .card img {
-    width: 100px;
-  }
-  .popular__cards .card {
-    width: 300px;
-  }
-  .card__body__popular {
-    margin: 0 0 0 16px};
-  .popular{
-    order: 2;
-    border-radius: 0;
-    width: auto;
-  }
-  .accommodations{
-    width: auto;
-    order: 3;
-    border-style: none;
-    background-color: white;
-  }
-  .accommodations__cards{
-    display: grid;
-    grid-template-columns: repeat(1,5fr);
-    grid-template-rows: auto;
-  }
-  .info {
-    margin: 20% 0 0 20px;
-  }
-  .formulary button i {
-    display: inline-flex;
-  }
-  .formulary button p {
-    display: none;
-  }
-  .activity{
-    margin-left: 20px;
-    width: auto;
-  }
-  .activity_ville{
-    flex-direction: column;
-  }
-  .activity_cards{
-    width: auto;
-  }
-  .activity_ville img{
-    height: 140px;
-  }
-  footer{
-    flex-direction: column;
-    width: auto;
-  }
-  .footer_align{
-   width: 90%;
-   margin-top: 0;
-   padding: 0 20px;
-   height: auto;
-  }
+}
+.filter {
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 20px;
+}
+.filter h3 {
+  margin-block: 0;
+  margin-bottom: 20px;
+}
+.formulary__title {
+  margin: 0 21px;
+}
+.formulary button i {
+  display: none;
+}
+.formulary__title h1 {
+  font-size: 22px;
+}
+.filterbottom ul {
+  gap: 10px;
+  width: auto;
+  font-size: 14px;
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.filter ul li {
+  height: 51px;
+  width: 130px;
+  margin-right: 0;
+}
+.info_i {
+  font-size: small;
+}
+.row {
+  flex-direction: column-reverse;
+}
+.card__body__popular h4 {
+  max-width: none;
+}
+.popular__cards .card img {
+  width: 100px;
+}
+.popular__cards .card {
+  width: 300px;
+}
+.card__body__popular {
+  margin: 0 0 0 16px;
+}
+.popular {
+  order: 2;
+  border-radius: 0;
+  width: auto;
+}
+.accommodations {
+  width: auto;
+  order: 3;
+  border-style: none;
+  background-color: white;
+}
+.accommodations__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 5fr);
+  grid-template-rows: auto;
+}
+.info {
+  margin: 20% 0 0 20px;
+}
+.formulary button i {
+  display: inline-flex;
+}
+.formulary button p {
+  display: none;
+}
+.activity {
+  margin-left: 20px;
+  width: auto;
+}
+.activity_ville {
+  flex-direction: column;
+}
+.activity_cards {
+  width: auto;
+}
+.activity_ville img {
+  height: 140px;
+}
+footer {
+  flex-direction: column;
+  width: auto;
+}
+.footer_align {
+  width: 90%;
+  margin-top: 0;
+  padding: 0 20px;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
-
 }
 @media screen and (max-width: 1400px) {
   .row {
