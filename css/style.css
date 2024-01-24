@@ -102,11 +102,8 @@ nav li a:hover {
   display: flex;
   gap: 10px;
 }
-.formulary button i {
+.formulary .mobile_search {
   display: none;
-}
-.formulary button p {
-  margin: 0;
 }
 /*                                                  partie filtre                               */
 .filter {
@@ -440,7 +437,11 @@ footer {
   .formulary {
     margin: 30px 0;
   }
-  .formulary button {
+  .formulary .search{
+    display: none;
+  }
+  .formulary .mobile_search{
+    display: inline-flex;
     border-radius: 15px;
   }
   header {
