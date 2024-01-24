@@ -1,4 +1,3 @@
-/*ALL*/
 :root {
   --one-color: #0065fc;
   /* var(--one-color) */
@@ -19,7 +18,6 @@ h1 h2 {
   margin-top: 5%;
 }
 .container {
-  min-width: 992px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -118,7 +116,7 @@ nav li a:hover {
 }
 .filter ul li {
   font-weight: 700;
-  margin-right: 33px;
+  margin-right: 5%;
   align-items: center;
   padding-right: 10px;
   padding-left: 20px;
@@ -128,7 +126,7 @@ nav li a:hover {
 .filterbottom ul {
   display: flex;
   height: 50px;
-  width: 914px;
+  width: 100%;
 }
 .filterbottom li:hover {
   background-color: var(--second-color);
@@ -180,7 +178,7 @@ nav li a:hover {
   border-color: var(--grey-color);
   background-color: var(--grey-color);
   padding: 0 40px;
-  width: 880px;
+  width: 91%;
 }
 .accommodations__cards {
   display: grid;
@@ -340,8 +338,8 @@ footer {
     align-items: baseline;
   }
   .accommodations {
-    width: 100%;
-    padding-left: 20px;
+    width: 90%;
+    padding: 0 3%;
   }
   .filterbottom ul {
     gap: 10px;
@@ -349,6 +347,7 @@ footer {
     font-size: 14px;
     padding-left: 0;
     flex-wrap: wrap;
+    height: auto;
   }
   .filter ul li {
     height: 50px;
@@ -367,9 +366,9 @@ footer {
   }
   .popular {
     padding: 0;
-    width: 100%;
+    width: 95%;
     border-radius: 0;
-    padding-left: 20px;
+    padding-left: 3%;
   }
   .popular h2 {
     margin: 30px 0 15px 0;
@@ -385,18 +384,22 @@ footer {
   .popular_logo i {
     margin: 33px 0 0 35%;
   }
-  .activity_ville img {
-    height: 50%;
+  .activity{
+    padding: 0 0 0 3%;
+    width: auto;
   }
   .activity_cards {
-    max-height: 300px;
     min-height: 0;
     border-style: solid;
     border-width: 5px;
     border-color: white;
+    width: 90%;
+    max-width: none;
   }
   .activity_ville img {
-    height: 75%;
+    height: 100%;
+    max-height: 140px;
+    width: 100%;
   }
   .activity h2 {
     font-size: 22px;
@@ -414,11 +417,18 @@ footer {
     font-size: 22px;
   }
   .activity_ville {
+    flex-direction: column;
     margin-bottom: 15%;
+  }
+  footer{
+    flex-direction: column;
   }
   .footer_align {
     padding-top: 0;
     height: 170px;
+    width: auto;
+    margin-top: 0;
+    padding-left: 5%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -549,7 +559,9 @@ footer {
 }
 }
 @media screen and (max-width: 1024px) {
-  
+ .filter ul li{
+  margin-right: 0;
+ } 
 }
 @media screen and (max-width: 1400px) {
   .row {
