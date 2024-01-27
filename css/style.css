@@ -324,6 +324,9 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
+  .row{
+    width: 95%;
+  }
   header{
     padding-left: 5%;
   }
@@ -424,6 +427,7 @@ footer {
   }
   footer{
     flex-direction: column;
+    width: 95%;
   }
   .footer_align {
     padding-top: 0;
