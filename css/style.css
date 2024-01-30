@@ -88,8 +88,7 @@ nav li a:hover {
   background: var(--grey-color);
 }
 .formulary button {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 0 15px 15px 0;
   border-color: var(--one-color);
   color: var(--second-color);
   background-color: var(--one-color);
@@ -97,6 +96,7 @@ nav li a:hover {
   font-size: 18px;
   font-weight: 700;
   border-width: 0px;
+  cursor: pointer;
 }
 .button {
   display: flex;
@@ -112,18 +112,21 @@ nav li a:hover {
   margin-top: 46px;
 }
 .filter ul li {
-    margin-inline: 3%;
-    font-weight: 700;
-    margin-right: 0%;
-    align-items: center;
-    padding-right: 1%;
-    padding-left: 20px;
-    cursor: pointer;
+  margin-inline: 3%;
+  font-weight: 700;
+  margin-right: 0%;
+  align-items: center;
+  padding-right: 1%;
+  padding-left: 20px;
+  cursor: pointer;
   color: black;
 }
 .filterbottom ul {
   display: flex;
   height: 50px;
+  width: 100%;
+}
+.filterbottom {
   width: 100%;
 }
 .filterbottom li:hover {
@@ -325,10 +328,10 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .row{
+  .row {
     width: 95%;
   }
-  header{
+  header {
     padding-left: 5%;
   }
   nav li {
@@ -337,7 +340,7 @@ footer {
     border-top: none;
     border-bottom: 2px solid white;
   }
-  .formulary__title{
+  .formulary__title {
     padding-left: 5%;
   }
   .filter {
@@ -392,7 +395,7 @@ footer {
   .popular_logo i {
     margin: 33px 0 0 35%;
   }
-  .activity{
+  .activity {
     padding: 0 0 0 3%;
     width: auto;
   }
@@ -426,7 +429,7 @@ footer {
     flex-direction: column;
     margin-bottom: 15%;
   }
-  footer{
+  footer {
     flex-direction: column;
     width: 95%;
   }
@@ -447,10 +450,10 @@ footer {
   .formulary {
     margin: 30px 0;
   }
-  .formulary .search{
+  .formulary .search {
     display: none;
   }
-  .formulary .mobile_search{
+  .formulary .mobile_search {
     display: inline-flex;
     border-radius: 15px;
   }
@@ -472,109 +475,141 @@ footer {
   .directionRow {
     padding: 0;
   }
-.filter {
-  flex-direction: column;
-  align-items: baseline;
-  margin-left: 20px;
-}
-.filter h3 {
-  margin-block: 0;
-  margin-bottom: 20px;
-}
-.formulary__title {
-  margin: 0 21px;
-}
-.formulary button i {
-  display: none;
-}
-.formulary__title h1 {
-  font-size: 22px;
-}
-.filterbottom ul {
-  gap: 10px;
-  width: auto;
-  font-size: 14px;
-  padding-left: 0;
-  flex-wrap: wrap;
-}
-.filter ul li {
-  height: 51px;
-  width: 130px;
-  margin-right: 0;
-}
-.info_i {
-  font-size: small;
-}
-.row {
-  flex-direction: column-reverse;
-}
-.card__body__popular h4 {
-  max-width: none;
-}
-.popular__cards .card img {
-  width: 100px;
-}
-.popular__cards .card {
-  width: 300px;
-}
-.card__body__popular {
-  margin: 0 0 0 16px;
-}
-.popular {
-  order: 2;
-  border-radius: 0;
-  width: auto;
-}
-.accommodations {
-  width: auto;
-  order: 3;
-  border-style: none;
-  background-color: white;
-}
-.accommodations__cards {
-  display: grid;
-  grid-template-columns: repeat(1, 5fr);
-  grid-template-rows: auto;
-}
-.info {
-  margin: 20px 0 0 20px;
-}
-.formulary button i {
-  display: inline-flex;
-}
-.formulary button p {
-  display: none;
-}
-.activity {
-  margin-left: 20px;
-  width: auto;
-}
-.activity_ville {
-  padding-right: 5%;
-  flex-direction: column;
-}
-.activity_cards {
-  width: auto;
-}
-.activity_ville img {
-  height: 140px;
-}
-footer {
-  flex-direction: column;
-  width: auto;
-}
-.footer_align {
-  width: 90%;
-  margin-top: 0;
-  padding: 0 20px;
-  height: auto;
-}
+  .filter {
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 20px;
+  }
+  .filter h3 {
+    margin-block: 0;
+    margin-bottom: 20px;
+  }
+  .formulary__title {
+    margin: 0 21px;
+  }
+  .formulary button i {
+    display: none;
+  }
+  .formulary__title h1 {
+    font-size: 22px;
+  }
+  .filterbottom ul {
+    gap: 10px;
+    width: auto;
+    font-size: 14px;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+  .filter ul li {
+    height: 51px;
+    width: 130px;
+    margin-right: 0;
+  }
+  .info_i {
+    font-size: small;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .card__body__popular h4 {
+    max-width: none;
+  }
+  .popular__cards .card img {
+    width: 100px;
+  }
+  .popular__cards .card {
+    width: 90%;
+  }
+  .card__body__popular {
+    margin: 0 0 0 16px;
+  }
+  .popular {
+    order: 2;
+    border-radius: 0;
+    box-sizing: initial;
+  }
+  .accommodations {
+    width: auto;
+    order: 3;
+    border-style: none;
+    background-color: white;
+  }
+  .accommodations__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    grid-template-rows: auto;
+  }
+  .info {
+    margin: 20px 0 0 20px;
+  }
+  .formulary button i {
+    display: inline-flex;
+  }
+  .formulary button p {
+    display: none;
+  }
+  .activity {
+    margin-left: 20px;
+    width: auto;
+  }
+  .activity_ville {
+    padding-right: 5%;
+    flex-direction: column;
+  }
+  .activity_cards {
+    width: auto;
+  }
+  .activity_ville img {
+    height: 140px;
+  }
+  footer {
+    flex-direction: column;
+    width: auto;
+  }
+  .footer_align {
+    width: 90%;
+    margin-top: 0;
+    padding: 0 20px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1024px) {
- .filter ul li{
-  margin-right: 1%;
- } 
- .row {
-  flex-direction: column;
-}
+  .filter ul li {
+    margin-right: 1%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .filterbottom ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .popular {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px 0 30px;
+  }
+  .popular__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .popular__cards .card img {
+    width: 100%;
+  }
+  .card {
+    margin-right: 20px;
+  }
+  .card__header__popular {
+    width: 100px;
+  }
+  .card__body__popular {
+    margin: 0px 7px 0 9px;
+    width: 75%;
+  }
+  .activity_ville img {
+    height: 250px;
+  }
+  .popular_logo i {
+    margin: 44px 0 0 70%;
+  }
 }
